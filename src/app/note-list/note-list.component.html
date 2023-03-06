@@ -1,0 +1,20 @@
+
+    <div class="container" style="width: 800px;">
+        <div class="row p-2"  >
+        <form>
+            <div class="form-group" >
+                <div class="row" *ngFor="let note of Notes">
+                <div class="col">
+                  <button type="button" class="btn btn-light" (click)="edit(note.id)" style="background-color: #d5dfe6; color: black; box-shadow: 4px 4px 4 px #D3D3D3; border-radius: 0rem; width: inherit;">
+                      {{note.id}}  | last changed:  {{note.changedDate | date : 'fullDate'}}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row p-2 mx-auto"  >
+          <button type="submit" class="btn btn-primary w-25" (click)="add()">AddNote</button>
+        </div>
+    </div>
+

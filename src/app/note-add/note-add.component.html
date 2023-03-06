@@ -1,0 +1,12 @@
+<div class="container">
+    <form>  
+        <div class="form-group">
+        <textarea #note type="text" class="form-control"  placeholder="Notiz..." ></textarea>
+        </div>
+        <div class="form-group mt-1">
+        
+        <button type="submit" class="btn btn-primary" (click)="add(note.value)">Add Note</button>
+        </div>
+        
+    </form>
+</div>

@@ -20,4 +20,4 @@ Notiz App erstellt mithilfe von Angular und der zur Verfügung gestellten WebApi
 
 ## Build
 
-Run `npm start` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm start` to build the project.
